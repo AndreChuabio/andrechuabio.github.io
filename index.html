@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Andre Chuabio — Quant Trader &amp; AI Engineer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@700&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="#" class="nav-logo">Andre Chuabio</a>
+      <ul class="nav-links">
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-inner">
+
+      <!-- LEFT: text + nav cards -->
+      <div class="hero-left">
+        <h1 class="hero-title">Quant Trader<br />&amp; AI Engineer</h1>
+        <p class="hero-bio">
+          M.S. Data Science candidate at Fordham University. B.A. Economics, University of Virginia.
+          I build quantitative trading systems, AI-powered financial tools, and production ML pipelines
+          at the intersection of statistical finance, deep learning, and systems engineering.
+        </p>
+
+        <div class="nav-cards">
+          <a href="#experience" class="nav-card" data-ripple>
+            <div class="nav-card-text">
+              <span class="nav-card-label">Experience</span>
+              <span class="nav-card-sub">PALO IT · EY-Parthenon</span>
+            </div>
+            <span class="nav-card-arrow">&#8594;</span>
+          </a>
+          <a href="#projects" class="nav-card" data-ripple>
+            <div class="nav-card-text">
+              <span class="nav-card-label">Projects</span>
+              <span class="nav-card-sub">Quant strategies · AI systems</span>
+            </div>
+            <span class="nav-card-arrow">&#8594;</span>
+          </a>
+          <a href="#contact" class="nav-card" data-ripple>
+            <div class="nav-card-text">
+              <span class="nav-card-label">Contact</span>
+              <span class="nav-card-sub">GitHub · LinkedIn · Email</span>
+            </div>
+            <span class="nav-card-arrow">&#8594;</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- RIGHT: sticky canvas grid -->
+      <div class="hero-right">
+        <div class="canvas-grid">
+          <div class="canvas-block">
+            <div class="canvas-label">Geometric Brownian Motion</div>
+            <canvas id="gbm"></canvas>
+          </div>
+          <div class="canvas-block">
+            <div class="canvas-label">Ornstein-Uhlenbeck Process</div>
+            <canvas id="ou"></canvas>
+          </div>
+          <div class="canvas-block">
+            <div class="canvas-label">Neural Network Forward Pass</div>
+            <canvas id="nn"></canvas>
+          </div>
+          <div class="canvas-block">
+            <div class="canvas-label">Efficient Frontier</div>
+            <canvas id="ef"></canvas>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section class="section" id="experience">
+    <div class="section-inner">
+      <h2 class="section-title">Experience</h2>
+
+      <div class="exp-item">
+        <div class="exp-header">
+          <div>
+            <span class="exp-company">PALO IT</span>
+            <span class="exp-role">Data Science &amp; AI Engineering Intern</span>
+          </div>
+          <span class="exp-date">May – Aug 2025</span>
+        </div>
+        <ul class="exp-bullets">
+          <li>
+            Built a full-stack AI caricature generator (React, Flask, Flux AI, MediaPipe) with
+            demographics-aware dynamic prompt engineering and multi-tier API fallback architecture
+            achieving 99.2% uptime; presented to AWS and Big 4 representatives at Singapore Institute
+            of Technology's AI Appreciation Day.
+          </li>
+          <li>
+            Engineered a real-time macOS transcription app in Rust, integrating OpenAI Whisper for
+            speech-to-text and Gemini for live theme extraction; reduced audio processing latency from
+            16s to under 8s via Metal GPU acceleration, voice activity detection, and INT8 quantization.
+          </li>
+          <li>
+            Researched and deployed MCP server POCs connecting Neo4j GraphRAG to GitHub Copilot for
+            real-time knowledge graph querying; built a LangChain RAG agentic pipeline and a
+            sentiment-driven trading dashboard for AI-chip equities.
+          </li>
+        </ul>
+      </div>
+
+      <div class="exp-item">
+        <div class="exp-header">
+          <div>
+            <span class="exp-company">EY-Parthenon</span>
+            <span class="exp-role">Strategy &amp; Transactions Intern</span>
+          </div>
+          <span class="exp-date">Jun – Aug 2023</span>
+        </div>
+        <ul class="exp-bullets">
+          <li>
+            Completed commercial buy-side due diligence for a waste management acquisition by analyzing
+            sell-side financial model reliability, competitive benchmarking, and identifying value
+            creation opportunities.
+          </li>
+          <li>
+            Formulated data analytics use cases and network planning strategy for a TMT sector business
+            development team.
+          </li>
+          <li>
+            Executed end-to-end transaction strategy across Private Equity, Media, and
+            Telecommunications verticals.
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="section section-alt" id="projects">
+    <div class="section-inner">
+      <h2 class="section-title">Projects</h2>
+
+      <div class="project-grid">
+
+        <article class="project-card">
+          <h3 class="project-name">Statistical Arbitrage</h3>
+          <p class="project-desc">
+            SPY/sector-hedged mean reversion + momentum strategy. Achieved 0.91 Information Ratio,
+            52% win rate, and 2.24 bips net PnL. Fully backtested pipeline with live signal generation.
+          </p>
+          <div class="project-metrics">
+            <span class="metric">IR: 0.91</span>
+            <span class="metric">Win: 52%</span>
+            <span class="metric">PnL: 2.24 bips</span>
+          </div>
+          <div class="project-tags">
+            <span class="tag">Python</span>
+            <span class="tag">pandas</span>
+            <span class="tag">Streamlit</span>
+          </div>
+          <a href="https://github.com/AndreChuabio" class="project-link" target="_blank" rel="noopener">
+            View on GitHub &#8594;
+          </a>
+        </article>
+
+        <article class="project-card">
+          <h3 class="project-name">Advanced Portfolio Hedging</h3>
+          <p class="project-desc">
+            37-factor risk model with Ledoit-Wolf shrinkage and CVXPY optimization. Achieves 27-29%
+            vol reduction without capital gains realization. Semantic nearest-neighbor hedges via
+            768-1024d embeddings.
+          </p>
+          <div class="project-metrics">
+            <span class="metric">Vol reduction: 27-29%</span>
+            <span class="metric">37 factors</span>
+          </div>
+          <div class="project-tags">
+            <span class="tag">CVXPY</span>
+            <span class="tag">NumPy</span>
+            <span class="tag">sentence-transformers</span>
+          </div>
+          <a href="https://github.com/AndreChuabio" class="project-link" target="_blank" rel="noopener">
+            View on GitHub &#8594;
+          </a>
+        </article>
+
+        <article class="project-card">
+          <h3 class="project-name">Agent Remittance Wallet</h3>
+          <p class="project-desc">
+            Cross-border remittance agent using Locus MCP and USDC smart wallets on Base. LangChain
+            agents with FastAPI and PostgreSQL backend, simulated KYC layer, and full audit trail.
+          </p>
+          <div class="project-metrics">
+            <span class="metric">On-chain USDC</span>
+            <span class="metric">LangChain agents</span>
+          </div>
+          <div class="project-tags">
+            <span class="tag">LangChain</span>
+            <span class="tag">FastAPI</span>
+            <span class="tag">PostgreSQL</span>
+            <span class="tag">MCP</span>
+          </div>
+          <a href="https://github.com/AndreChuabio" class="project-link" target="_blank" rel="noopener">
+            View on GitHub &#8594;
+          </a>
+        </article>
+
+        <article class="project-card">
+          <h3 class="project-name">AI Caricature Generator</h3>
+          <p class="project-desc">
+            Flask + React + Flux AI + N8N + MediaPipe fallback pipeline. Demographics-aware prompt
+            engineering, 99.2% uptime. Presented at SIT AI Appreciation Day to AWS and Big 4 reps.
+          </p>
+          <div class="project-metrics">
+            <span class="metric">Uptime: 99.2%</span>
+            <span class="metric">Multi-tier fallback</span>
+          </div>
+          <div class="project-tags">
+            <span class="tag">Flask</span>
+            <span class="tag">React</span>
+            <span class="tag">Flux AI</span>
+            <span class="tag">MediaPipe</span>
+          </div>
+          <a href="https://github.com/AndreChuabio" class="project-link" target="_blank" rel="noopener">
+            View on GitHub &#8594;
+          </a>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS & CREDENTIALS -->
+  <section class="section" id="skills">
+    <div class="section-inner">
+      <h2 class="section-title">Skills &amp; Credentials</h2>
+
+      <div class="skills-grid">
+        <div class="skill-group">
+          <h4 class="skill-group-title">Languages</h4>
+          <div class="skill-tags">
+            <span class="tag">Python</span>
+            <span class="tag">SQL</span>
+            <span class="tag">JavaScript / TypeScript</span>
+            <span class="tag">R</span>
+            <span class="tag">Rust</span>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <h4 class="skill-group-title">Quant / ML</h4>
+          <div class="skill-tags">
+            <span class="tag">pandas</span>
+            <span class="tag">NumPy</span>
+            <span class="tag">scikit-learn</span>
+            <span class="tag">CVXPY</span>
+            <span class="tag">yfinance</span>
+            <span class="tag">FinBERT</span>
+            <span class="tag">sentence-transformers</span>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <h4 class="skill-group-title">AI / LLM</h4>
+          <div class="skill-tags">
+            <span class="tag">Anthropic Claude</span>
+            <span class="tag">OpenAI</span>
+            <span class="tag">Google Gemini</span>
+            <span class="tag">LangChain</span>
+            <span class="tag">MCP servers</span>
+            <span class="tag">RAG</span>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <h4 class="skill-group-title">Infra</h4>
+          <div class="skill-tags">
+            <span class="tag">FastAPI</span>
+            <span class="tag">PostgreSQL</span>
+            <span class="tag">MongoDB</span>
+            <span class="tag">Redis</span>
+            <span class="tag">Neo4j</span>
+            <span class="tag">Docker</span>
+            <span class="tag">Azure</span>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <h4 class="skill-group-title">Certifications</h4>
+          <div class="skill-tags">
+            <span class="tag tag-accent">GitHub Copilot Certified</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section section-alt" id="contact">
+    <div class="section-inner">
+      <h2 class="section-title">Contact</h2>
+      <div class="contact-links">
+        <a href="https://github.com/AndreChuabio" class="contact-item" target="_blank" rel="noopener">
+          <span class="contact-icon">&#xe7a3;</span>
+          <span>github.com/AndreChuabio</span>
+        </a>
+        <a href="https://linkedin.com/in/Andre-Chuabio" class="contact-item" target="_blank" rel="noopener">
+          <span class="contact-icon">&#xe7bb;</span>
+          <span>linkedin.com/in/Andre-Chuabio</span>
+        </a>
+        <a href="mailto:andre102599@gmail.com" class="contact-item">
+          <span class="contact-icon">&#xe0be;</span>
+          <span>andre102599@gmail.com</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <span>Andre Chuabio</span>
+      <span>&copy; 2026</span>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
