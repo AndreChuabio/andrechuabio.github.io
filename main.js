@@ -537,6 +537,27 @@ function randn() {
 }());
 
 /* ===================================================
+   NAV ACTIVE HIGHLIGHT
+=================================================== */
+
+(function initNavHighlight() {
+  const sections = document.querySelectorAll('section[id]');
+  const navLinks = document.querySelectorAll('.nav-links a');
+
+  const observer = new IntersectionObserver(function (entries) {
+    entries.forEach(function (entry) {
+      if (entry.isIntersecting) {
+        navLinks.forEach(function (link) {
+          link.classList.toggle('active', link.getAttribute('href') === '#' + entry.target.id);
+        });
+      }
+    });
+  }, { rootMargin: '-40% 0px -55% 0px' });
+
+  sections.forEach(function (s) { observer.observe(s); });
+}());
+
+/* ===================================================
    RIPPLE EFFECT
 =================================================== */
 
