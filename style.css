@@ -305,7 +305,7 @@ ul {
 /* ===== PROJECTS ===== */
 .project-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(3, 1fr);
   gap: 20px;
 }
 
@@ -449,6 +449,12 @@ ul {
 }
 
 /* ===== RESPONSIVE ===== */
+@media (max-width: 1024px) {
+  .project-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
 @media (max-width: 900px) {
   .hero-inner {
     grid-template-columns: 1fr;
@@ -467,7 +473,7 @@ ul {
   }
 
   .project-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
   }
 }
 
@@ -494,5 +500,9 @@ ul {
 
   .nav-links {
     gap: 16px;
+  }
+
+  .project-grid {
+    grid-template-columns: 1fr;
   }
 }
