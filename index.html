@@ -3,14 +3,14 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Andre Chuabio — Quant Trader &amp; AI Engineer</title>
+  <title>Andre Chuabio — Aspiring AI Engineer / Data Scientist</title>
   <meta name="description" content="Andre Chuabio — M.S. Data Science candidate at Fordham University. Building quantitative trading systems, AI-powered financial tools, and production ML pipelines." />
-  <meta property="og:title" content="Andre Chuabio — Quant Trader &amp; AI Engineer" />
+  <meta property="og:title" content="Andre Chuabio — Aspiring AI Engineer / Data Scientist" />
   <meta property="og:description" content="M.S. Data Science candidate at Fordham University. Quant strategies, AI systems, and production ML pipelines." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://andrechuabio.github.io" />
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Andre Chuabio — Quant Trader &amp; AI Engineer" />
+  <meta name="twitter:title" content="Andre Chuabio — Aspiring AI Engineer / Data Scientist" />
   <meta name="twitter:description" content="M.S. Data Science candidate at Fordham University. Quant strategies, AI systems, and production ML pipelines." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -499,6 +499,60 @@
         </div>
         <a href="https://github.com/AndreChuabio/wellness-coach" class="project-link" target="_blank" rel="noopener">
           View on GitHub &#8594;
+        </a>
+      </article>
+
+      <article class="hackathon-card">
+        <div class="hackathon-header">
+          <div>
+            <span class="hackathon-event">Slop Con NYC</span>
+            <span class="hackathon-host">New York, NY</span>
+          </div>
+          <span class="hackathon-result">Shipped in 5 hrs &middot; Live in prod</span>
+        </div>
+
+        <h3 class="project-name">RehabAsCode</h3>
+        <p class="project-desc">
+          Clinician-in-the-loop rehab protocol system. Patients chat with an AI coach named Maya;
+          when she detects symptom changes, weekly milestones, or check-ins, a multi-agent LLM
+          pipeline drafts protocol revisions. Every revision goes through a clinician dashboard
+          for approve/reject before flipping live &mdash; human oversight on every treatment
+          adjustment. Initial 5-hour demo ran on a GitHub-PR-as-message-bus; productionized
+          post-event by replacing the PR-bus with direct Supabase writes under RLS and upgrading
+          the drafter to a five-agent deterministic pipeline.
+        </p>
+
+        <div class="hackathon-nodes">
+          <div class="hack-node hack-node--done">
+            <span class="hack-node-label">Layer 1 &mdash; Live</span>
+            <span class="hack-node-name">Coach Maya</span>
+            <span class="hack-node-desc">OpenAI gpt-4o-mini &middot; Tool-calling intake, weekly plans &amp; check-ins</span>
+          </div>
+          <div class="hack-node hack-node--done">
+            <span class="hack-node-label">Layer 2 &mdash; Live</span>
+            <span class="hack-node-name">Multi-Agent Drafter</span>
+            <span class="hack-node-desc">Claude Sonnet 4.6 &middot; researcher &rarr; trend_analyst &rarr; evaluator &rarr; planner &rarr; safety_reviewer</span>
+          </div>
+          <div class="hack-node hack-node--done">
+            <span class="hack-node-label">Layer 3 &mdash; Live</span>
+            <span class="hack-node-name">Clinician Dashboard</span>
+            <span class="hack-node-desc">Supabase RLS &middot; DiffNarrator summaries &middot; approve/reject workflow flips protocols active</span>
+          </div>
+        </div>
+
+        <div class="project-tags">
+          <span class="tag">Anthropic</span>
+          <span class="tag">OpenAI</span>
+          <span class="tag">Supabase</span>
+          <span class="tag">Tavus</span>
+          <span class="tag">FastAPI</span>
+          <span class="tag">MediaPipe</span>
+          <span class="tag">Vercel</span>
+          <span class="tag">Python</span>
+        </div>
+
+        <a href="https://github.com/AndreChuabio/rehab-as-code" class="project-link" target="_blank" rel="noopener">
+          View on GitHub &rarr;
         </a>
       </article>
 
