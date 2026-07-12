@@ -391,6 +391,64 @@
       <article class="hackathon-card">
         <div class="hackathon-header">
           <div>
+            <span class="hackathon-event">AI Healthcare Hack NYC &mdash; Arya Health x Twilio AI Startup Searchlight</span>
+            <span class="hackathon-host">Arya Health HQ, Midtown, New York</span>
+          </div>
+          <span class="hackathon-result">Solo build &middot; Live product shipped in one day</span>
+        </div>
+
+        <h3 class="project-name">Trialme</h3>
+        <p class="project-desc">
+          Find paid clinical trials and get screened in one phone call. Candidates browse real
+          recruiting studies compiled from ClinicalTrials.gov, call a live Twilio line, and a voice
+          agent runs the study&rsquo;s actual published eligibility criteria as a conversation &mdash;
+          rejecting, cross-offering, or qualifying and booking a real coordinator callback inside the
+          call. Dropped calls are called back and resume at the exact pending question. The LLM never
+          decides eligibility: it only extracts structured answers, and deterministic code judges them
+          against registry-verified criteria. Every spoken sentence is a code-owned template, the same
+          verbatim-script property IRB-approved pre-screens run under.
+        </p>
+
+        <div class="hackathon-nodes">
+          <div class="hack-node hack-node--done">
+            <span class="hack-node-label">Voice &mdash; Live</span>
+            <span class="hack-node-name">Twilio ConversationRelay</span>
+            <span class="hack-node-desc">State-machine agent &middot; extraction-only LLM &middot; consent gate &middot; 911/988 escalation tiers &middot; drop-and-resume recall</span>
+          </div>
+          <div class="hack-node hack-node--done">
+            <span class="hack-node-label">Knowledge &mdash; Live</span>
+            <span class="hack-node-name">ClinicalTrials.gov compiler</span>
+            <span class="hack-node-desc">LLM drafts &rarr; deterministic validation gates &rarr; registry re-verification &middot; compensation only when officially published, always cited</span>
+          </div>
+          <div class="hack-node hack-node--done">
+            <span class="hack-node-label">Operations &mdash; Live</span>
+            <span class="hack-node-name">Coordinator dashboard</span>
+            <span class="hack-node-desc">Eligibility checklists quoting protocol text &middot; transcripts with per-turn latency &middot; enrollment tracking and check-in scheduling</span>
+          </div>
+        </div>
+
+        <div class="project-tags">
+          <span class="tag">Twilio ConversationRelay</span>
+          <span class="tag">Twilio Verify</span>
+          <span class="tag">FastAPI</span>
+          <span class="tag">Claude</span>
+          <span class="tag">Supabase</span>
+          <span class="tag">Next.js</span>
+          <span class="tag">Railway</span>
+          <span class="tag">Vercel</span>
+        </div>
+
+        <a href="https://www.youtube.com/watch?v=mF9NGOefYOE" class="project-link" target="_blank" rel="noopener">
+          Watch the demo &rarr;
+        </a>
+        <a href="https://trialme-seven.vercel.app" class="project-link" target="_blank" rel="noopener">
+          View live product &rarr;
+        </a>
+      </article>
+
+      <article class="hackathon-card">
+        <div class="hackathon-header">
+          <div>
             <span class="hackathon-event">ETHGlobal New York 2026 &mdash; Chainlink</span>
             <span class="hackathon-host">Metropolitan Pavilion, New York</span>
           </div>
