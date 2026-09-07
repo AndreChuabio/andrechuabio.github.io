@@ -1,851 +1,412 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Andre Chuabio — AI Engineer / Data Scientist</title>
-  <meta name="description" content="Andre Chuabio — Founding engineer shipping production AI products across fintech and healthcare. M.S. Data Science (AI concentration), Fordham University." />
-  <meta property="og:title" content="Andre Chuabio — AI Engineer / Data Scientist" />
-  <meta property="og:description" content="Founding engineer shipping AI products across fintech and healthcare, from prototype to production." />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Andre Chuabio — Forward Deployed AI Engineer</title>
+  <meta name="description" content="Andre Chuabio, forward deployed AI engineer. Founding engineer at HelmIQ shipping production AI across healthtech and fintech, from prototype to production for real users." />
+  <meta name="theme-color" content="#080a0e" />
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+
   <meta property="og:type" content="website" />
+  <meta property="og:title" content="Andre Chuabio — Forward Deployed AI Engineer" />
+  <meta property="og:description" content="Founding engineer shipping production AI across healthtech and fintech, from prototype to production." />
   <meta property="og:url" content="https://andrechuabio.github.io" />
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Andre Chuabio — AI Engineer / Data Scientist" />
-  <meta name="twitter:description" content="Founding engineer shipping AI products across fintech and healthcare, from prototype to production." />
+
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@700&display=swap"
-    rel="stylesheet"
-  />
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-
-  <!-- NAV -->
-  <nav class="nav">
-    <div class="nav-inner">
-      <a href="#" class="nav-logo">Andre Chuabio</a>
-      <ul class="nav-links">
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#hackathons">Hackathons</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
+  <header class="topbar">
+    <div class="wrap topbar__inner">
+      <a class="brand" href="#top" aria-label="Andre Chuabio home">
+        <span class="brand__mark" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none">
+            <path d="M4 9.2 L4 4 L8.4 7.1 L15.6 7.1 L20 4 L20 9.2 L20 13.4 C20 17.1 16.4 20 12 20 C7.6 20 4 17.1 4 13.4 Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
+            <path d="M9 12.4 L10.6 12.4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+            <path d="M13.4 12.4 L15 12.4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+          </svg>
+        </span>
+        Andre Chuabio
+      </a>
+      <nav class="topnav" aria-label="Primary">
+        <a href="#work">Work</a>
+        <a href="#experience">Experience</a>
+        <a href="#builds">Builds</a>
+        <a href="#research">Research</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <a class="status-pill" href="#contact"><i aria-hidden="true"></i>Open to <span>FDE </span>roles</a>
     </div>
-  </nav>
+  </header>
 
-  <!-- HERO -->
-  <section class="hero">
-    <div class="hero-inner">
+  <main id="top">
+    <section class="hero">
+      <div class="gridfield" aria-hidden="true"></div>
+      <svg class="hero__ekg" viewBox="0 0 1440 300" preserveAspectRatio="xMidYMid slice" aria-hidden="true" focusable="false">
+        <path d="M0 190 L180 190 L200 190 L215 120 L232 265 L248 60 L262 190 L430 190 L470 190 L488 160 L505 190 L700 190 L730 190 L748 105 L765 262 L782 55 L798 190 L980 190 L1015 190 L1032 158 L1048 190 L1250 190 L1290 190 L1305 130 L1320 255 L1336 75 L1350 190 L1440 190" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
 
-      <!-- LEFT: text + nav cards -->
-      <div class="hero-left">
-        <h1 class="hero-title">Andre<br />Chuabio</h1>
-        <p class="hero-bio">
-          M.S. Data Science (AI concentration), Fordham University. B.A. Economics, University of Virginia.
-          Founding engineer shipping AI products end to end, applied AI across fintech and healthcare,
-          from prototype to production for real users.
+      <div class="wrap">
+        <div class="eyebrow mono reveal d1">
+          <span>Forward-deployed AI engineer</span>
+          <span>NYC</span>
+          <span>AI + Health + Fintech</span>
+        </div>
+
+        <h1 class="headline reveal d1">
+          I embed with teams and ship AI that does <em>real operational work</em>, not demos.
+        </h1>
+
+        <p class="lede reveal d2">
+          Founding engineer at HelmIQ. I build agentic systems across healthtech and fintech,
+          and I take them from prototype to production for real users.
         </p>
 
-        <div class="nav-cards">
-          <a href="#experience" class="nav-card" data-ripple>
-            <div class="nav-card-text">
-              <span class="nav-card-label">Experience</span>
-              <span class="nav-card-sub">HelmIQ · PALO IT · EY-Parthenon</span>
-            </div>
-            <span class="nav-card-arrow">&#8594;</span>
+        <div class="cta-row reveal d3">
+          <a class="cta cta--solid" href="#builds">
+            See the builds <span class="arrow" aria-hidden="true">&darr;</span>
           </a>
-          <a href="#projects" class="nav-card" data-ripple>
-            <div class="nav-card-text">
-              <span class="nav-card-label">Projects</span>
-              <span class="nav-card-sub">Quant strategies · AI systems</span>
-            </div>
-            <span class="nav-card-arrow">&#8594;</span>
-          </a>
-          <a href="#hackathons" class="nav-card" data-ripple>
-            <div class="nav-card-text">
-              <span class="nav-card-label">Hackathons</span>
-              <span class="nav-card-sub">MediGuard · VC in a Box · Healthmaxx · PaperPilot</span>
-            </div>
-            <span class="nav-card-arrow">&#8594;</span>
-          </a>
-          <a href="#contact" class="nav-card" data-ripple>
-            <div class="nav-card-text">
-              <span class="nav-card-label">Contact</span>
-              <span class="nav-card-sub">GitHub · LinkedIn · Email</span>
-            </div>
-            <span class="nav-card-arrow">&#8594;</span>
+          <a class="cta cta--ghost" href="#contact">
+            Get in touch <span class="arrow" aria-hidden="true">&#8599;</span>
           </a>
         </div>
-      </div>
 
-      <!-- RIGHT: sticky canvas grid -->
-      <div class="hero-right">
-        <div class="canvas-grid">
-          <div class="canvas-block">
-            <div class="canvas-label">Geometric Brownian Motion</div>
-            <canvas id="gbm"></canvas>
+        <div class="strip reveal d4">
+          <div class="strip__cell">
+            <span class="strip__label">HelmIQ</span>
+            <span class="strip__value"><i class="dot dot--production"></i>Production</span>
           </div>
-          <div class="canvas-block">
-            <div class="canvas-label">Ornstein-Uhlenbeck Process</div>
-            <canvas id="ou"></canvas>
+          <div class="strip__cell">
+            <span class="strip__label">MediGuard</span>
+            <span class="strip__value"><i class="dot dot--live"></i>Live on PyPI</span>
           </div>
-          <div class="canvas-block">
-            <div class="canvas-label">Neural Network Forward Pass</div>
-            <canvas id="nn"></canvas>
+          <div class="strip__cell">
+            <span class="strip__label">MeritAI</span>
+            <span class="strip__value"><i class="dot dot--live"></i>Live</span>
           </div>
-          <div class="canvas-block">
-            <div class="canvas-label">Efficient Frontier</div>
-            <canvas id="ef"></canvas>
+          <div class="strip__cell">
+            <span class="strip__label">RehabAsCode</span>
+            <span class="strip__value"><i class="dot dot--beta"></i>Early build</span>
           </div>
         </div>
       </div>
+    </section>
 
-    </div>
-  </section>
-
-  <!-- EXPERIENCE -->
-  <section class="section" id="experience">
-    <div class="section-inner">
-      <h2 class="section-title">Experience</h2>
-
-      <div class="exp-item">
-        <div class="exp-header">
-          <div>
-            <span class="exp-company">HelmIQ</span>
-            <span class="exp-role">Founding Engineer</span>
-          </div>
-          <span class="exp-date">2026 – Present</span>
+    <section class="section" id="work">
+      <div class="wrap">
+        <div class="kicker">
+          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 18 L9 11 L13 15 L20 6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          Work
         </div>
-        <ul class="exp-bullets">
-          <li>
-            Engineered the multi-tenant foundation for an AI-native CRM serving private equity and
-            investment banking firms (Next.js, TypeScript, Prisma, PostgreSQL): added the
-            per-organization data model and dual-write OAuth and settings paths that took the product
-            from single-tenant to onboarding multiple live clients in production.
-          </li>
-          <li>
-            Shipped per-organization monthly AI spend caps and usage metering across the Anthropic and
-            OpenAI layer, enforcing tenant-level cost controls at the model-call chokepoint.
-          </li>
-          <li>
-            Diagnosed and resolved a production document-upload outage spanning DNS, CORS, and
-            Content-Security-Policy, restoring the browser-to-Cloudflare-R2 file pipeline while live
-            clients were on the system.
-          </li>
-          <li>
-            Architected a vendor-neutral integration layer that lets each client firm choose its own
-            letter-delivery provider for handwritten and printed mail across US and international
-            markets; shipped across a five-PR stack, including live-debugging a third-party API
-            version migration.
-          </li>
+        <div class="section__head">
+          <h2 class="section__title">What I do, plainly.</h2>
+          <p class="section__note">Four things I get hired for. Each one is how a week actually looks, not a service page.</p>
+        </div>
+
+        <div class="boxgrid boxgrid--2">
+          <article class="panel reveal">
+            <div class="panel__tag">Embed &amp; ship</div>
+            <h3 class="panel__title">Drop in and deliver</h3>
+            <p class="panel__body">
+              I embed with a team and ship production AI, not scripted demos. I own the work
+              end to end, from the first commit to real users on the system.
+            </p>
+          </article>
+
+          <article class="panel reveal">
+            <div class="panel__tag">Agentic systems</div>
+            <h3 class="panel__title">Agents that carry work</h3>
+            <p class="panel__body">
+              Multi-agent pipelines, LLM tool-use, evaluation harnesses, and cost controls.
+              Guardrails and human-in-the-loop review built in from the start.
+            </p>
+          </article>
+
+          <article class="panel reveal">
+            <div class="panel__tag">Healthtech &amp; fintech</div>
+            <h3 class="panel__title">Real-stakes domains</h3>
+            <p class="panel__body">
+              Regulated, high-consequence work. Clinician-in-the-loop by design, PHI handled
+              with care, multi-tenant data kept isolated and traceable.
+            </p>
+          </article>
+
+          <article class="panel reveal">
+            <div class="panel__tag">Prototype to production</div>
+            <h3 class="panel__title">All the way</h3>
+            <p class="panel__body">
+              I take the thing all the way. Onboarding live clients, debugging outages under
+              load, hardening a demo into something a business runs on.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="experience">
+      <div class="wrap">
+        <div class="kicker">
+          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="3" y="7" width="18" height="13" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M8.5 7 V5 A1 1 0 0 1 9.5 4 h5 A1 1 0 0 1 15.5 5 V7" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+          Experience
+        </div>
+        <div class="section__head">
+          <h2 class="section__title">Where I have shipped.</h2>
+          <p class="section__note">Production systems with real users, real money, and deadlines that did not move.</p>
+        </div>
+
+        <div class="exp">
+          <article class="exp__item reveal">
+            <div class="exp__head">
+              <div>
+                <span class="exp__company">HelmIQ</span>
+                <span class="exp__role">Founding Engineer</span>
+              </div>
+              <span class="exp__date">2026 &ndash; Present</span>
+            </div>
+            <ul class="exp__bullets">
+              <li>Engineered the multi-tenant foundation for an AI-native CRM serving private equity and investment banking firms (Next.js, TypeScript, Prisma, PostgreSQL): added the per-organization data model and dual-write OAuth and settings paths that took the product from single-tenant to onboarding multiple live clients in production.</li>
+              <li>Shipped per-organization monthly AI spend caps and usage metering across the Anthropic and OpenAI layer, enforcing tenant-level cost controls at the model-call chokepoint.</li>
+              <li>Diagnosed and resolved a production document-upload outage spanning DNS, CORS, and Content-Security-Policy, restoring the browser-to-Cloudflare-R2 file pipeline while live clients were on the system.</li>
+              <li>Architected a vendor-neutral integration layer that lets each client firm choose its own letter-delivery provider for handwritten and printed mail across US and international markets, shipped across a five-PR stack, including live-debugging a third-party API version migration.</li>
+            </ul>
+          </article>
+
+          <article class="exp__item reveal">
+            <div class="exp__head">
+              <div>
+                <span class="exp__company">PALO IT</span>
+                <span class="exp__role">Data Science &amp; AI Engineering Intern</span>
+              </div>
+              <span class="exp__date">May &ndash; Aug 2025</span>
+            </div>
+            <ul class="exp__bullets">
+              <li>Built a full-stack AI caricature generator (React, Flask, Flux AI, MediaPipe) with demographics-aware dynamic prompt engineering and multi-tier API fallback achieving 99.2% uptime, presented to AWS and Big 4 representatives at Singapore Institute of Technology's AI Appreciation Day.</li>
+              <li>Engineered a real-time macOS transcription app in Rust, integrating OpenAI Whisper for speech-to-text and Gemini for live theme extraction, reduced audio processing latency from 16s to under 8s via Metal GPU acceleration, voice activity detection, and INT8 quantization.</li>
+              <li>Researched and deployed MCP server POCs connecting Neo4j GraphRAG to GitHub Copilot, built a LangChain RAG agentic pipeline and a sentiment-driven trading dashboard for AI-chip equities.</li>
+            </ul>
+          </article>
+
+          <article class="exp__item reveal">
+            <div class="exp__head">
+              <div>
+                <span class="exp__company">EY-Parthenon</span>
+                <span class="exp__role">Strategy &amp; Transactions Intern</span>
+              </div>
+              <span class="exp__date">Jun &ndash; Aug 2023</span>
+            </div>
+            <ul class="exp__bullets">
+              <li>Completed commercial buy-side due diligence for a waste management acquisition, analyzing sell-side model reliability, competitive benchmarking, and value creation opportunities.</li>
+              <li>Formulated data analytics use cases and network planning strategy for a TMT sector business development team.</li>
+              <li>Executed end-to-end transaction strategy across Private Equity, Media, and Telecommunications verticals.</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="builds">
+      <div class="wrap">
+        <div class="kicker">
+          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 3 L20 7.5 V16.5 L12 21 L4 16.5 V7.5 Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M12 21 V12 L20 7.5 M12 12 L4 7.5" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg>
+          Builds
+        </div>
+        <div class="section__head">
+          <h2 class="section__title">Selected builds.</h2>
+          <p class="section__note">Each one shipped to a real surface. Status is stated plainly, never inflated.</p>
+        </div>
+
+        <div class="cards">
+          <article class="card reveal">
+            <div class="card__top">
+              <h3 class="card__name">GoHealthMe</h3>
+              <span class="status"><i class="dot dot--pilot"></i>pilot</span>
+            </div>
+            <div class="card__badge">Winner &middot; ETHGlobal NY 2026 &middot; Chainlink Confidential AI Attester &middot; 2,000 USDC</div>
+            <p class="card__body">Verified health goals paid out in USDC the moment they are met, with raw health data judged inside a TEE so it never hits the chain.</p>
+            <div class="tags"><span>Solidity</span><span>Chainlink CRE</span><span>World ID</span><span>USDC</span><span>Next.js</span></div>
+            <a class="card__link" href="https://gohealthme.vercel.app" target="_blank" rel="noopener noreferrer">View demo <span class="arrow" aria-hidden="true">&#8599;</span></a>
+          </article>
+
+          <article class="card reveal">
+            <div class="card__top">
+              <h3 class="card__name">MediGuard</h3>
+              <span class="status"><i class="dot dot--live"></i>live</span>
+            </div>
+            <div class="card__badge">Winner &middot; Enterprise Agent Jam NYC &middot; shipped to PyPI</div>
+            <p class="card__body">A PHI redaction layer you drop in front of any LLM so patient data never reaches the model. HIPAA-focused PHI redaction, installable as a package.</p>
+            <div class="tags"><span>FastAPI</span><span>MCP</span><span>Anthropic</span><span>Python</span></div>
+            <a class="card__link" href="https://pypi.org/project/mediguard-dlp" target="_blank" rel="noopener noreferrer">View on PyPI <span class="arrow" aria-hidden="true">&#8599;</span></a>
+          </article>
+
+          <article class="card reveal">
+            <div class="card__top">
+              <h3 class="card__name">MeritAI</h3>
+              <span class="status"><i class="dot dot--live"></i>live</span>
+            </div>
+            <div class="card__badge">Agentic Engineering Hack NYC &middot; Datadog</div>
+            <p class="card__body">Turns a GitHub repo into a submittable research paper, then drafts the outreach and tracks the O-1A visa case. Three agentic surfaces on one stack.</p>
+            <div class="tags"><span>Vercel AI Gateway</span><span>ClickHouse</span><span>Claude</span><span>Datadog</span></div>
+            <a class="card__link" href="https://web-sigma-two-29.vercel.app" target="_blank" rel="noopener noreferrer">View demo <span class="arrow" aria-hidden="true">&#8599;</span></a>
+          </article>
+
+          <article class="card reveal">
+            <div class="card__top">
+              <h3 class="card__name">RehabAsCode</h3>
+              <span class="status"><i class="dot dot--beta"></i>beta</span>
+            </div>
+            <div class="card__badge">Slop Con NYC</div>
+            <p class="card__body">A rehab coach that drafts protocol changes, and a clinician approves every one before it goes live. Test-data patients only.</p>
+            <div class="tags"><span>Anthropic</span><span>OpenAI</span><span>Supabase</span><span>FastAPI</span></div>
+            <a class="card__link" href="https://rehab-as-code-five.vercel.app" target="_blank" rel="noopener noreferrer">View demo <span class="arrow" aria-hidden="true">&#8599;</span></a>
+          </article>
+
+          <article class="card reveal">
+            <div class="card__top">
+              <h3 class="card__name">PepHouse</h3>
+              <span class="status"><i class="dot dot--poc"></i>POC</span>
+            </div>
+            <div class="card__badge">Honorable Mention &middot; Health AI Hackathon NYC</div>
+            <p class="card__body">A voice simulator for hard conversations about hyped, under-evidenced compounds, grounded in a tiered evidence registry that never overstates thin data.</p>
+            <div class="tags"><span>FastAPI</span><span>Supabase</span><span>Monte Carlo</span><span>Tavus CVI</span></div>
+            <a class="card__link" href="https://github.com/AndreChuabio/pephouse" target="_blank" rel="noopener noreferrer">View on GitHub <span class="arrow" aria-hidden="true">&#8599;</span></a>
+          </article>
+
+          <article class="card reveal">
+            <div class="card__top">
+              <h3 class="card__name">Healthmaxx</h3>
+              <span class="status"><i class="dot dot--poc"></i>POC</span>
+            </div>
+            <div class="card__badge">ElevenLabs &amp; Tavus Labs Hackathon</div>
+            <p class="card__body">Real-time video wellness coaching off Apple Watch health data and calendar context, delivered through a live video avatar.</p>
+            <div class="tags"><span>Tavus</span><span>Claude Haiku</span><span>FastAPI</span></div>
+            <a class="card__link" href="https://github.com/AndreChuabio/wellness-coach" target="_blank" rel="noopener noreferrer">View on GitHub <span class="arrow" aria-hidden="true">&#8599;</span></a>
+          </article>
+        </div>
+
+        <div class="note">
+          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.7"/><path d="M12 11 v5.5 M12 7.6 v0.8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+          HelmIQ is production with live paying customers. RehabAsCode runs on test data only. GoHealthMe runs on testnet.
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="research">
+      <div class="wrap">
+        <div class="kicker">
+          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5" stroke="currentColor" stroke-width="1.8"/><path d="M15.4 15.4 L21 21" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+          Research
+        </div>
+        <div class="section__head">
+          <h2 class="section__title">Quant and ML research.</h2>
+          <p class="section__note">From the Fordham MS in Data Science. Supporting evidence for how I think, not the headline.</p>
+        </div>
+        <ul class="rlist">
+          <li class="reveal"><a href="https://github.com/AndreChuabio" target="_blank" rel="noopener noreferrer"><span class="rlist__name">Statistical arbitrage</span><span class="rlist__desc">SPY and sector-hedged mean reversion, 0.91 information ratio across 51k+ trades.</span></a></li>
+          <li class="reveal"><a href="https://github.com/AndreChuabio" target="_blank" rel="noopener noreferrer"><span class="rlist__name">Advanced portfolio hedging</span><span class="rlist__desc">37-factor risk model with CVXPY, 27 to 29% volatility reduction without realizing gains.</span></a></li>
+          <li class="reveal"><a href="https://github.com/AndreChuabio" target="_blank" rel="noopener noreferrer"><span class="rlist__name">Blackbox ML systematic trading</span><span class="rlist__desc">Walk-forward factor return model with model bake-off and SHAP explainability.</span></a></li>
+          <li class="reveal"><a href="https://github.com/AndreChuabio" target="_blank" rel="noopener noreferrer"><span class="rlist__name">Portfolio risk analytics</span><span class="rlist__desc">Real-time VaR, Sharpe, and beta on MongoDB Atlas plus Redis Cloud.</span></a></li>
         </ul>
+        <div class="note">
+          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.7"/><path d="M12 11 v5.5 M12 7.6 v0.8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+          Research and backtests. None of this is or was a live book.
+        </div>
       </div>
+    </section>
 
-      <div class="exp-item">
-        <div class="exp-header">
-          <div>
-            <span class="exp-company">PALO IT</span>
-            <span class="exp-role">Data Science &amp; AI Engineering Intern</span>
-          </div>
-          <span class="exp-date">May – Aug 2025</span>
+    <section class="section" id="skills">
+      <div class="wrap">
+        <div class="kicker">
+          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M9 8 L4.5 12 L9 16 M15 8 L19.5 12 L15 16" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          Stack
         </div>
-        <ul class="exp-bullets">
-          <li>
-            Built a full-stack AI caricature generator (React, Flask, Flux AI, MediaPipe) with
-            demographics-aware dynamic prompt engineering and multi-tier API fallback architecture
-            achieving 99.2% uptime; presented to AWS and Big 4 representatives at Singapore Institute
-            of Technology's AI Appreciation Day.
-          </li>
-          <li>
-            Engineered a real-time macOS transcription app in Rust, integrating OpenAI Whisper for
-            speech-to-text and Gemini for live theme extraction; reduced audio processing latency from
-            16s to under 8s via Metal GPU acceleration, voice activity detection, and INT8 quantization.
-          </li>
-          <li>
-            Researched and deployed MCP server POCs connecting Neo4j GraphRAG to GitHub Copilot for
-            real-time knowledge graph querying; built a LangChain RAG agentic pipeline and a
-            sentiment-driven trading dashboard for AI-chip equities.
-          </li>
-        </ul>
-      </div>
-
-      <div class="exp-item">
-        <div class="exp-header">
-          <div>
-            <span class="exp-company">EY-Parthenon</span>
-            <span class="exp-role">Strategy &amp; Transactions Intern</span>
-          </div>
-          <span class="exp-date">Jun – Aug 2023</span>
+        <div class="section__head">
+          <h2 class="section__title">What I build with.</h2>
+          <p class="section__note">Grouped by where it sits in the system, not by how impressive the logo looks.</p>
         </div>
-        <ul class="exp-bullets">
-          <li>
-            Completed commercial buy-side due diligence for a waste management acquisition by analyzing
-            sell-side financial model reliability, competitive benchmarking, and identifying value
-            creation opportunities.
-          </li>
-          <li>
-            Formulated data analytics use cases and network planning strategy for a TMT sector business
-            development team.
-          </li>
-          <li>
-            Executed end-to-end transaction strategy across Private Equity, Media, and
-            Telecommunications verticals.
-          </li>
-        </ul>
-      </div>
-    </div>
-  </section>
-
-  <!-- PROJECTS -->
-  <section class="section section-alt" id="projects">
-    <div class="section-inner">
-      <h2 class="section-title">Projects</h2>
-
-      <div class="project-grid">
-
-        <article class="project-card">
-          <h3 class="project-name">Statistical Arbitrage</h3>
-          <p class="project-desc">
-            SPY/sector-hedged mean reversion + momentum strategy. Achieved 0.91 Information Ratio,
-            52% win rate, and 2.24 bips net PnL. Fully backtested pipeline with live signal generation.
-          </p>
-          <div class="project-metrics">
-            <span class="metric">IR: 0.91</span>
-            <span class="metric">Win: 52%</span>
-            <span class="metric">PnL: 2.24 bips</span>
+        <div class="skills">
+          <div class="skillgroup reveal">
+            <div class="skillgroup__title">Languages</div>
+            <div class="tags"><span>Python</span><span>SQL</span><span>JavaScript / TypeScript</span><span>Rust</span><span>R</span></div>
           </div>
-          <div class="project-tags">
-            <span class="tag">Python</span>
-            <span class="tag">pandas</span>
-            <span class="tag">Streamlit</span>
+          <div class="skillgroup reveal">
+            <div class="skillgroup__title">AI / LLM</div>
+            <div class="tags"><span>Anthropic Claude</span><span>OpenAI</span><span>Gemini</span><span>LangChain</span><span>MCP servers</span><span>RAG</span><span>Evals</span></div>
           </div>
-          <a href="https://github.com/AndreChuabio" class="project-link" target="_blank" rel="noopener">
-            View on GitHub &#8594;
-          </a>
-        </article>
-
-        <article class="project-card">
-          <h3 class="project-name">Advanced Portfolio Hedging</h3>
-          <p class="project-desc">
-            37-factor risk model with Ledoit-Wolf shrinkage and CVXPY optimization. Achieves 27-29%
-            vol reduction without capital gains realization. Semantic nearest-neighbor hedges via
-            768-1024d embeddings.
-          </p>
-          <div class="project-metrics">
-            <span class="metric">Vol reduction: 27-29%</span>
-            <span class="metric">37 factors</span>
+          <div class="skillgroup reveal">
+            <div class="skillgroup__title">Infra</div>
+            <div class="tags"><span>FastAPI</span><span>Next.js</span><span>PostgreSQL</span><span>Prisma</span><span>MongoDB</span><span>Redis</span><span>Docker</span><span>Vercel</span></div>
           </div>
-          <div class="project-tags">
-            <span class="tag">CVXPY</span>
-            <span class="tag">NumPy</span>
-            <span class="tag">sentence-transformers</span>
+          <div class="skillgroup reveal">
+            <div class="skillgroup__title">Data / ML</div>
+            <div class="tags"><span>pandas</span><span>NumPy</span><span>scikit-learn</span><span>CVXPY</span></div>
           </div>
-          <a href="https://github.com/AndreChuabio" class="project-link" target="_blank" rel="noopener">
-            View on GitHub &#8594;
-          </a>
-        </article>
-
-        <article class="project-card">
-          <h3 class="project-name">AI Caricature Generator</h3>
-          <p class="project-desc">
-            Flask + React + Flux AI + N8N + MediaPipe fallback pipeline. Demographics-aware prompt
-            engineering, 99.2% uptime. Presented at SIT AI Appreciation Day to AWS and Big 4 reps.
-          </p>
-          <div class="project-metrics">
-            <span class="metric">Uptime: 99.2%</span>
-            <span class="metric">Multi-tier fallback</span>
-          </div>
-          <div class="project-tags">
-            <span class="tag">Flask</span>
-            <span class="tag">React</span>
-            <span class="tag">Flux AI</span>
-            <span class="tag">MediaPipe</span>
-          </div>
-          <a href="https://github.com/AndreChuabio" class="project-link" target="_blank" rel="noopener">
-            View on GitHub &#8594;
-          </a>
-        </article>
-
-        <article class="project-card">
-          <h3 class="project-name">Autonomous Portfolio Rebalancer</h3>
-          <p class="project-desc">
-            Three-phase agentic workflow (Monitor &rarr; Analyze &rarr; Decide) for autonomous portfolio
-            rebalancing. Evaluates 4 rebalancing scenarios with VaR, Sharpe, and beta scoring.
-            FinBERT sentiment integration for regime-aware decisions.
-          </p>
-          <div class="project-metrics">
-            <span class="metric">3-agent pipeline</span>
-            <span class="metric">Adaptive thresholds</span>
-          </div>
-          <div class="project-tags">
-            <span class="tag">Python</span>
-            <span class="tag">MongoDB</span>
-            <span class="tag">FinBERT</span>
-            <span class="tag">MCP</span>
-          </div>
-          <a href="https://github.com/AndreChuabio/autonomous-portfolio-rebalancer" class="project-link" target="_blank" rel="noopener">
-            View on GitHub &#8594;
-          </a>
-        </article>
-
-        <article class="project-card">
-          <h3 class="project-name">Blackbox ML Systematic Trading</h3>
-          <p class="project-desc">
-            End-to-end ML pipeline for factor-based equity return prediction using 1999&ndash;2025 Bloomberg
-            factor data. Model bake-off across XGBoost, BayesianRidge, and adaptive blending with
-            walk-forward backtesting and SHAP explainability.
-          </p>
-          <div class="project-metrics">
-            <span class="metric">Blended IR: 0.34</span>
-            <span class="metric">IC Hit: 55.7%</span>
-            <span class="metric">LS Alpha: 3.91</span>
-          </div>
-          <div class="project-tags">
-            <span class="tag">XGBoost</span>
-            <span class="tag">SHAP</span>
-            <span class="tag">scikit-learn</span>
-            <span class="tag">pandas</span>
-          </div>
-          <a href="https://github.com/AndreChuabio/Blackbox_ML_Systematic_Trading" class="project-link" target="_blank" rel="noopener">
-            View on GitHub &#8594;
-          </a>
-        </article>
-
-        <article class="project-card">
-          <h3 class="project-name">Portfolio Risk Analytics Dashboard</h3>
-          <p class="project-desc">
-            Real-time risk analytics system across 3 portfolios and 20 tickers. MongoDB Atlas for
-            historical VaR, Sharpe, and beta storage; Redis Cloud for sub-10ms live metric reads.
-            Streamlit dashboard with configurable alert thresholds.
-          </p>
-          <div class="project-metrics">
-            <span class="metric">28/28 tests passing</span>
-            <span class="metric">Redis: &lt;8ms</span>
-          </div>
-          <div class="project-tags">
-            <span class="tag">MongoDB</span>
-            <span class="tag">Redis</span>
-            <span class="tag">Streamlit</span>
-            <span class="tag">NumPy</span>
-          </div>
-          <a href="https://github.com/AndreChuabio/Final-Portfolio-Risk-Analytics-NOSQL" class="project-link" target="_blank" rel="noopener">
-            View on GitHub &#8594;
-          </a>
-        </article>
-
-        <article class="project-card">
-          <h3 class="project-name">MCP yFinance Server</h3>
-          <p class="project-desc">
-            MCP server combining real-time sentiment analysis, live stock data, and paper trading
-            execution. Gemini AI sentiment aggregated from news and Reddit. Intelligent caching
-            reduces API calls by 60%+. Batch processes 5 tickers in under 5 seconds.
-          </p>
-          <div class="project-metrics">
-            <span class="metric">60%+ fewer API calls</span>
-            <span class="metric">5 tickers &lt;5s</span>
-          </div>
-          <div class="project-tags">
-            <span class="tag">Python</span>
-            <span class="tag">Node.js</span>
-            <span class="tag">MCP</span>
-            <span class="tag">Gemini</span>
-            <span class="tag">yfinance</span>
-          </div>
-          <a href="https://github.com/AndreChuabio/mcp-yfinance-server" class="project-link" target="_blank" rel="noopener">
-            View on GitHub &#8594;
-          </a>
-        </article>
-
-        <article class="project-card">
-          <h3 class="project-name">Agentic Academic Advisor</h3>
-          <p class="project-desc">
-            AI-powered academic advising system with graduation risk assessment, career-based course
-            recommendations, prerequisite visualization, and post-graduation pathway planning.
-            Early warning system flags at-risk students before late graduations occur.
-          </p>
-          <div class="project-metrics">
-            <span class="metric">Risk assessment</span>
-            <span class="metric">Career mapping</span>
-          </div>
-          <div class="project-tags">
-            <span class="tag">Python</span>
-            <span class="tag">AI</span>
-            <span class="tag">Agentic</span>
-          </div>
-          <a href="https://github.com/AndreChuabio/Agentic-Academic-Advisor" class="project-link" target="_blank" rel="noopener">
-            View on GitHub &#8594;
-          </a>
-        </article>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- HACKATHONS -->
-  <section class="section" id="hackathons">
-    <div class="section-inner">
-      <h2 class="section-title">Hackathons</h2>
-
-      <article class="hackathon-card">
-        <div class="hackathon-header">
-          <div>
-            <span class="hackathon-event">ETHGlobal New York 2026 &mdash; Chainlink</span>
-            <span class="hackathon-host">Metropolitan Pavilion, New York</span>
-          </div>
-          <span class="hackathon-result">Winner &middot; Best Use of Chainlink Confidential AI Attester &middot; $2,000 USDC</span>
-        </div>
-
-        <h3 class="project-name">GoHealthMe</h3>
-        <p class="project-desc">
-          Verified health goals with instant USDC rewards. Sponsor-funded pools pay out the moment a
-          health behavior is verified &mdash; sleep, workouts, preventive care. A Chainlink Confidential
-          AI Attester judges the goal inside a TEE, so raw health data never touches the chain; only the
-          DON-signed verdict is recorded on-chain. World ID gates every pool to one human, one entry, and
-          Arc settles payouts in native USDC. Built across three on-chain integrations in one weekend.
-        </p>
-
-        <div class="hackathon-nodes">
-          <div class="hack-node hack-node--done">
-            <span class="hack-node-label">Verify &mdash; Live</span>
-            <span class="hack-node-name">Chainlink CRE</span>
-            <span class="hack-node-desc">Confidential AI Attester in a TEE &rarr; DON-signed report &rarr; HealthVerdict.sol gates settlement</span>
-          </div>
-          <div class="hack-node hack-node--done">
-            <span class="hack-node-label">Identity &mdash; Live</span>
-            <span class="hack-node-name">World ID</span>
-            <span class="hack-node-desc">Proof-of-human nullifier gates joinPool &middot; one human, one entry</span>
-          </div>
-          <div class="hack-node hack-node--done">
-            <span class="hack-node-label">Settlement &mdash; Live</span>
-            <span class="hack-node-name">Arc</span>
-            <span class="hack-node-desc">Native-USDC chain &middot; instant pool payout, forfeits roll back in</span>
-          </div>
-        </div>
-
-        <div class="project-tags">
-          <span class="tag">Chainlink CRE</span>
-          <span class="tag">World ID</span>
-          <span class="tag">Arc</span>
-          <span class="tag">USDC</span>
-          <span class="tag">Solidity</span>
-          <span class="tag">Foundry</span>
-          <span class="tag">Next.js</span>
-          <span class="tag">wagmi/viem</span>
-        </div>
-
-        <a href="https://gohealthme.vercel.app" class="project-link" target="_blank" rel="noopener">
-          View live demo &rarr;
-        </a>
-      </article>
-
-      <article class="hackathon-card">
-        <div class="hackathon-header">
-          <div>
-            <span class="hackathon-event">Enterprise Agent Jam NYC &mdash; Veris AI</span>
-            <span class="hackathon-host">SoHo, New York</span>
-          </div>
-          <span class="hackathon-result">Winner &middot; Live in prod &middot; published on PyPI</span>
-        </div>
-
-        <h3 class="project-name">MediGuard AI</h3>
-        <p class="project-desc">
-          HIPAA-compliant DLP middleware and primary care onboarding agent. Drop it in front of any
-          LLM and patient conversations are automatically scanned and redacted before reaching any
-          model &mdash; raw PHI never touches the AI. Patients call a real phone number, get onboarded
-          conversationally, and are triaged straight to the right specialist. No forms, no GP
-          appointment just to get a referral. Built across 3 live components in 6 hours, then
-          shipped post-event as an installable MCP server.
-        </p>
-
-        <div class="hackathon-nodes">
-          <div class="hack-node hack-node--done">
-            <span class="hack-node-label">Layer 1 &mdash; Live</span>
-            <span class="hack-node-name">DLP Pipeline</span>
-            <span class="hack-node-desc">regex &rarr; Baseten triage &rarr; Claude semantic &rarr; GPT-4o &middot; Full HIPAA audit trail</span>
-          </div>
-          <div class="hack-node hack-node--done">
-            <span class="hack-node-label">Layer 2 &mdash; Live</span>
-            <span class="hack-node-name">Voice Agent</span>
-            <span class="hack-node-desc">Voicerun STT/TTS &middot; Conversational onboarding &middot; Claude specialist triage</span>
-          </div>
-          <div class="hack-node hack-node--done">
-            <span class="hack-node-label">Layer 3 &mdash; Live</span>
-            <span class="hack-node-name">MCP Server</span>
-            <span class="hack-node-desc">pip install mediguard-dlp &middot; Claude Code &middot; Claude Desktop &middot; Cursor &middot; Windsurf</span>
-          </div>
-        </div>
-
-        <div class="project-tags">
-          <span class="tag">Anthropic</span>
-          <span class="tag">Baseten</span>
-          <span class="tag">Voicerun</span>
-          <span class="tag">OpenAI</span>
-          <span class="tag">FastAPI</span>
-          <span class="tag">MCP</span>
-          <span class="tag">Python</span>
-          <span class="tag">HIPAA</span>
-        </div>
-
-        <a href="https://github.com/AndreChuabio/dlp-agent" class="project-link" target="_blank" rel="noopener">
-          View on GitHub &rarr;
-        </a>
-      </article>
-
-      <article class="hackathon-card">
-        <div class="hackathon-header">
-          <div>
-            <span class="hackathon-event">Health AI Hackathon 2026</span>
-            <span class="hackathon-host">New York</span>
-          </div>
-          <span class="hackathon-result">Honorable Mention</span>
-        </div>
-
-        <h3 class="project-name">PepHouse</h3>
-        <p class="project-desc">
-          A voice-first simulator for the hardest conversations in medicine &mdash; counseling on hyped,
-          under-evidenced compounds like peptides. One tiered evidence registry (Tier 1 trials and openFDA
-          down to Tier 3 anecdote) grounds both an AI patient you interview by voice with an
-          evidence-grounded grader, and a Monte Carlo twin that returns honest, quarter-by-quarter outcome
-          bands &mdash; with void and excluded paths so it never overstates thin evidence. Extended
-          post-event into a Tavus CVI video concierge (Maya) that counsels live, cites every claim on
-          screen, and refers to a licensed provider &mdash; never prescribing.
-        </p>
-
-        <div class="hackathon-nodes">
-          <div class="hack-node hack-node--done">
-            <span class="hack-node-label">Registry &mdash; Live</span>
-            <span class="hack-node-name">Tiered evidence</span>
-            <span class="hack-node-desc">Tier 1 trials / openFDA / PubMed down to Tier 3 anecdote &middot; grounds every claim, never invents</span>
-          </div>
-          <div class="hack-node hack-node--done">
-            <span class="hack-node-label">Simulator &mdash; Live</span>
-            <span class="hack-node-name">Monte Carlo twin</span>
-            <span class="hack-node-desc">Tier-1 priors &rarr; quarter-by-quarter outcome bands &middot; void / excluded honesty</span>
-          </div>
-          <div class="hack-node hack-node--done">
-            <span class="hack-node-label">Consult &mdash; Post-event</span>
-            <span class="hack-node-name">Tavus CVI (Maya)</span>
-            <span class="hack-node-desc">Real-time video agent &middot; tier-honest, tool-grounded, refers to a provider</span>
-          </div>
-        </div>
-
-        <div class="project-tags">
-          <span class="tag">FastAPI</span>
-          <span class="tag">Supabase</span>
-          <span class="tag">React</span>
-          <span class="tag">Monte Carlo</span>
-          <span class="tag">ElevenLabs</span>
-          <span class="tag">Tavus CVI</span>
-          <span class="tag">Anthropic</span>
-          <span class="tag">Python</span>
-        </div>
-
-        <a href="https://github.com/AndreChuabio/pephouse" class="project-link" target="_blank" rel="noopener">
-          View on GitHub &rarr;
-        </a>
-      </article>
-
-      <article class="hackathon-card">
-        <div class="hackathon-header">
-          <div>
-            <span class="hackathon-event">Personalized Agents Hackathon &mdash; Lightning AI &amp; Validia</span>
-            <span class="hackathon-host">Brooklyn, NY</span>
-          </div>
-          <span class="hackathon-result">2 / 3 nodes shipped in 5 hrs</span>
-        </div>
-
-        <h3 class="project-name">VC in a Box</h3>
-        <p class="project-desc">
-          Multi-agent due diligence system for startup pitch analysis. Founders upload a pitch deck,
-          type their pitch, or describe their idea and receive a full investment-grade report &mdash;
-          competitor landscape, financial stress-testing, and an invest-or-pass verdict from a
-          simulated partner panel. Built on 3 parallel OpenClaw nodes running specialized subagent clusters,
-          powered by Lightning AI&rsquo;s VPS.
-        </p>
-
-        <div class="hackathon-nodes">
-          <div class="hack-node hack-node--done">
-            <span class="hack-node-label">Node 1 &mdash; Live</span>
-            <span class="hack-node-name">Market Intelligence</span>
-            <span class="hack-node-desc">Competitor landscape &middot; TAM/SAM/SOM &middot; Comparable funding rounds</span>
-          </div>
-          <div class="hack-node hack-node--done">
-            <span class="hack-node-label">Node 2 &mdash; Live</span>
-            <span class="hack-node-name">Due Diligence</span>
-            <span class="hack-node-desc">Financial stress-testing &middot; Red flag detection &middot; Risk scanning</span>
-          </div>
-          <div class="hack-node hack-node--wip">
-            <span class="hack-node-label">Node 3 &mdash; In Progress</span>
-            <span class="hack-node-name">Partner Deliberation</span>
-            <span class="hack-node-desc">Bull agent &middot; Bear agent &middot; Managing Partner invest-or-pass verdict</span>
-          </div>
-        </div>
-
-        <div class="project-tags">
-          <span class="tag">OpenClaw</span>
-          <span class="tag">Lightning AI</span>
-          <span class="tag">Multi-Agent</span>
-          <span class="tag">Agentic AI</span>
-          <span class="tag">Python</span>
-        </div>
-      </article>
-
-      <article class="hackathon-card">
-        <div class="hackathon-header">
-          <div>
-            <span class="hackathon-event">ElevenLabs &amp; Tavus Labs Hackathon</span>
-            <span class="hackathon-host">New York, NY</span>
-          </div>
-          <span class="hackathon-result">Demoed on stage &middot; ClawHub Skill published</span>
-        </div>
-
-        <h3 class="project-name">Healthmaxx</h3>
-        <p class="project-desc">
-          AI wellness coaching app that delivers personalized, real-time video coaching by combining
-          Apple Watch health data, Google Calendar context, and Claude-generated recommendations
-          &mdash; delivered via a live Tavus CVI video avatar. iOS Shortcut syncs HRV, sleep, steps,
-          and resting heart rate to a FastAPI backend; a 6:30 AM cron pre-builds context for
-          instant session start. Came back a second weekend after not finishing the first &mdash; shipped and demoed.
-        </p>
-
-        <div class="hackathon-nodes">
-          <div class="hack-node hack-node--done">
-            <span class="hack-node-label">Layer 1 &mdash; Live</span>
-            <span class="hack-node-name">Health Sync</span>
-            <span class="hack-node-desc">iOS Shortcut &middot; Apple Watch HealthKit &middot; FastAPI /health-sync endpoint</span>
-          </div>
-          <div class="hack-node hack-node--done">
-            <span class="hack-node-label">Layer 2 &mdash; Live</span>
-            <span class="hack-node-name">Coaching Session</span>
-            <span class="hack-node-desc">Claude Haiku context builder &middot; Tavus CVI video avatar &middot; Google Calendar integration</span>
-          </div>
-          <div class="hack-node hack-node--done">
-            <span class="hack-node-label">Post-event &mdash; Live</span>
-            <span class="hack-node-name">ClawHub Skill</span>
-            <span class="hack-node-desc">OpenClaw Skill published on ClawHub &middot; Railway deployment</span>
-          </div>
-        </div>
-
-        <div class="project-tags">
-          <span class="tag">ElevenLabs</span>
-          <span class="tag">Tavus</span>
-          <span class="tag">Claude Haiku</span>
-          <span class="tag">FastAPI</span>
-          <span class="tag">Python</span>
-          <span class="tag">OpenClaw</span>
-        </div>
-        <a href="https://github.com/AndreChuabio/wellness-coach" class="project-link" target="_blank" rel="noopener">
-          View on GitHub &#8594;
-        </a>
-      </article>
-
-      <article class="hackathon-card">
-        <div class="hackathon-header">
-          <div>
-            <span class="hackathon-event">Slop Con NYC</span>
-            <span class="hackathon-host">New York, NY</span>
-          </div>
-          <span class="hackathon-result">Shipped in 5 hrs &middot; Live in prod</span>
-        </div>
-
-        <h3 class="project-name">RehabAsCode</h3>
-        <p class="project-desc">
-          Clinician-in-the-loop rehab protocol system. Patients chat with an AI coach named Maya;
-          when she detects symptom changes, weekly milestones, or check-ins, a multi-agent LLM
-          pipeline drafts protocol revisions. Every revision goes through a clinician dashboard
-          for approve/reject before flipping live &mdash; human oversight on every treatment
-          adjustment. Initial 5-hour demo ran on a GitHub-PR-as-message-bus; productionized
-          post-event by replacing the PR-bus with direct Supabase writes under RLS and upgrading
-          the drafter to a five-agent deterministic pipeline.
-        </p>
-
-        <div class="hackathon-nodes">
-          <div class="hack-node hack-node--done">
-            <span class="hack-node-label">Layer 1 &mdash; Live</span>
-            <span class="hack-node-name">Coach Maya</span>
-            <span class="hack-node-desc">OpenAI gpt-4o-mini &middot; Tool-calling intake, weekly plans &amp; check-ins</span>
-          </div>
-          <div class="hack-node hack-node--done">
-            <span class="hack-node-label">Layer 2 &mdash; Live</span>
-            <span class="hack-node-name">Multi-Agent Drafter</span>
-            <span class="hack-node-desc">Claude Sonnet 4.6 &middot; researcher &rarr; trend_analyst &rarr; evaluator &rarr; planner &rarr; safety_reviewer</span>
-          </div>
-          <div class="hack-node hack-node--done">
-            <span class="hack-node-label">Layer 3 &mdash; Live</span>
-            <span class="hack-node-name">Clinician Dashboard</span>
-            <span class="hack-node-desc">Supabase RLS &middot; DiffNarrator summaries &middot; approve/reject workflow flips protocols active</span>
-          </div>
-        </div>
-
-        <div class="project-tags">
-          <span class="tag">Anthropic</span>
-          <span class="tag">OpenAI</span>
-          <span class="tag">Supabase</span>
-          <span class="tag">Tavus</span>
-          <span class="tag">FastAPI</span>
-          <span class="tag">MediaPipe</span>
-          <span class="tag">Vercel</span>
-          <span class="tag">Python</span>
-        </div>
-
-        <a href="https://github.com/AndreChuabio/rehab-as-code" class="project-link" target="_blank" rel="noopener">
-          View on GitHub &rarr;
-        </a>
-      </article>
-
-      <article class="hackathon-card">
-        <div class="hackathon-header">
-          <div>
-            <span class="hackathon-event">Agentic Engineering Hack NYC &mdash; Datadog</span>
-            <span class="hackathon-host">Datadog HQ, New York</span>
-          </div>
-          <span class="hackathon-result">3 surfaces shipped &middot; Live on Railway &middot; Productionized for two users</span>
-        </div>
-
-        <h3 class="project-name">PaperPilot</h3>
-        <p class="project-desc">
-          Three agentic surfaces on one stack. Drop a GitHub repo and get a research-paper draft for a
-          matched venue (LaTeX + BibTeX) plus an installable Claude Code plugin. Draft purpose-driven
-          outreach (visa, speaking, collab, network) off a Senso brand kit. Track O-1A visa progress
-          against the 8 USCIS criteria with a declared-evidence ledger, AI-streamed petition-quality
-          narratives, and a reportlab PDF dossier for attorney handoff. Built at Datadog HQ in one
-          day; hardened post-event for two real users with passcode auth, per-user data isolation
-          across seven ClickHouse tables, and idempotent migrations. Every LLM call traced through
-          Datadog LLM Observability.
-        </p>
-
-        <div class="hackathon-nodes">
-          <div class="hack-node hack-node--done">
-            <span class="hack-node-label">Surface 1 &mdash; Live</span>
-            <span class="hack-node-name">Productize</span>
-            <span class="hack-node-desc">Gemini 1M-ctx summary &rarr; ClickHouse venue match (53 CFPs + live Nimble) &rarr; Claude Sonnet 4.6 streaming draft &rarr; LaTeX + Claude plugin zip</span>
-          </div>
-          <div class="hack-node hack-node--done">
-            <span class="hack-node-label">Surface 2 &mdash; Live</span>
-            <span class="hack-node-name">Market</span>
-            <span class="hack-node-desc">Senso brand kit &rarr; purpose-driven drafts (VISA / SPEAKING / COLLAB / NETWORK) &middot; outbound channels &middot; ClickHouse outreach_log</span>
-          </div>
-          <div class="hack-node hack-node--done">
-            <span class="hack-node-label">Surface 3 &mdash; Live</span>
-            <span class="hack-node-name">Track</span>
-            <span class="hack-node-desc">O-1A 8-criteria evidence ledger &rarr; AI-streamed petition narratives &rarr; reportlab PDF dossier for attorney handoff</span>
-          </div>
-        </div>
-
-        <div class="project-tags">
-          <span class="tag">Anthropic</span>
-          <span class="tag">Vercel AI Gateway</span>
-          <span class="tag">DeepMind</span>
-          <span class="tag">ClickHouse</span>
-          <span class="tag">Senso</span>
-          <span class="tag">Nimble</span>
-          <span class="tag">Datadog</span>
-          <span class="tag">Streamlit</span>
-          <span class="tag">reportlab</span>
-          <span class="tag">Python</span>
-        </div>
-
-        <a href="https://github.com/AndreChuabio/agentichack" class="project-link" target="_blank" rel="noopener">
-          View on GitHub &rarr;
-        </a>
-      </article>
-
-    </div>
-  </section>
-
-  <!-- SKILLS & CREDENTIALS -->
-  <section class="section" id="skills">
-    <div class="section-inner">
-      <h2 class="section-title">Skills &amp; Credentials</h2>
-
-      <div class="skills-grid">
-        <div class="skill-group">
-          <h4 class="skill-group-title">Languages</h4>
-          <div class="skill-tags">
-            <span class="tag">Python</span>
-            <span class="tag">SQL</span>
-            <span class="tag">JavaScript / TypeScript</span>
-            <span class="tag">R</span>
-            <span class="tag">Rust</span>
-          </div>
-        </div>
-
-        <div class="skill-group">
-          <h4 class="skill-group-title">Quant / ML</h4>
-          <div class="skill-tags">
-            <span class="tag">pandas</span>
-            <span class="tag">NumPy</span>
-            <span class="tag">scikit-learn</span>
-            <span class="tag">CVXPY</span>
-            <span class="tag">yfinance</span>
-            <span class="tag">FinBERT</span>
-            <span class="tag">sentence-transformers</span>
-          </div>
-        </div>
-
-        <div class="skill-group">
-          <h4 class="skill-group-title">AI / LLM</h4>
-          <div class="skill-tags">
-            <span class="tag">Anthropic Claude</span>
-            <span class="tag">OpenAI</span>
-            <span class="tag">Google Gemini</span>
-            <span class="tag">LangChain</span>
-            <span class="tag">MCP servers</span>
-            <span class="tag">RAG</span>
-          </div>
-        </div>
-
-        <div class="skill-group">
-          <h4 class="skill-group-title">Infra</h4>
-          <div class="skill-tags">
-            <span class="tag">FastAPI</span>
-            <span class="tag">PostgreSQL</span>
-            <span class="tag">MongoDB</span>
-            <span class="tag">Redis</span>
-            <span class="tag">Neo4j</span>
-            <span class="tag">Docker</span>
-            <span class="tag">Azure</span>
-          </div>
-        </div>
-
-        <div class="skill-group">
-          <h4 class="skill-group-title">Certifications</h4>
-          <div class="skill-tags">
-            <span class="tag tag-accent">GitHub Copilot Certified</span>
+          <div class="skillgroup reveal">
+            <div class="skillgroup__title">Credential</div>
+            <div class="tags"><span class="tag--accent">GitHub Copilot Certified</span></div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- CONTACT -->
-  <section class="section section-alt" id="contact">
-    <div class="section-inner">
-      <h2 class="section-title">Contact</h2>
-      <div class="contact-links">
-        <a href="https://github.com/AndreChuabio" class="contact-item" target="_blank" rel="noopener">
-          <svg class="contact-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="20" height="20" aria-hidden="true"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
-          <span>github.com/AndreChuabio</span>
-        </a>
-        <a href="https://linkedin.com/in/Andre-Chuabio" class="contact-item" target="_blank" rel="noopener">
-          <svg class="contact-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="20" height="20" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
-          <span>linkedin.com/in/Andre-Chuabio</span>
-        </a>
-        <a href="mailto:andre102599@gmail.com" class="contact-item">
-          <svg class="contact-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="20" height="20" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M2 7l10 7 10-7"/></svg>
-          <span>andre102599@gmail.com</span>
-        </a>
+    <section class="section" id="contact">
+      <div class="wrap">
+        <div class="kicker">
+          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="3" y="5.5" width="18" height="13" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M3.6 6.4 L12 13 L20.4 6.4" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>
+          Contact
+        </div>
+        <div class="section__head">
+          <h2 class="section__title">Let us build something.</h2>
+          <p class="section__note">Hiring a forward-deployed or applied AI engineer, or you need someone who takes it all the way. Reach out.</p>
+        </div>
+        <div class="contact">
+          <div>
+            <p class="contact__text">
+              Fastest way to reach me is email. I read everything and reply the same day.
+            </p>
+            <a class="cta cta--signal" href="mailto:andre102599@gmail.com">
+              andre102599@gmail.com <span class="arrow" aria-hidden="true">&#8599;</span>
+            </a>
+          </div>
+          <div class="contact__links">
+            <a class="flink" href="https://github.com/AndreChuabio" target="_blank" rel="noopener noreferrer"><b>GitHub</b><span aria-hidden="true">&#8599;</span></a>
+            <a class="flink" href="https://linkedin.com/in/Andre-Chuabio" target="_blank" rel="noopener noreferrer"><b>LinkedIn</b><span aria-hidden="true">&#8599;</span></a>
+            <a class="flink" href="https://chuabiolabs.com" target="_blank" rel="noopener noreferrer"><b>Chuabio Labs, my studio</b><span aria-hidden="true">&#8599;</span></a>
+          </div>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
+  </main>
 
-  <!-- FOOTER -->
   <footer class="footer">
-    <div class="footer-inner">
-      <span>Andre Chuabio</span>
-      <span>&copy; 2026</span>
+    <div class="wrap">
+      <div class="footer__top">
+        <div>
+          <span class="footer__brand">
+            <span class="brand__mark" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none">
+                <path d="M4 9.2 L4 4 L8.4 7.1 L15.6 7.1 L20 4 L20 9.2 L20 13.4 C20 17.1 16.4 20 12 20 C7.6 20 4 17.1 4 13.4 Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
+                <path d="M9 12.4 L10.6 12.4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+                <path d="M13.4 12.4 L15 12.4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+              </svg>
+            </span>
+            Andre Chuabio
+          </span>
+          <p class="footer__blurb">Forward-deployed AI engineer. Building production AI across healthtech and fintech.</p>
+        </div>
+        <div class="footer__contact">
+          <span class="mono">Contact</span>
+          <a href="mailto:andre102599@gmail.com">andre102599@gmail.com</a>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>Andre Chuabio, 2026<br />New York City &middot; <a href="https://chuabiolabs.com" target="_blank" rel="noopener noreferrer">chuabiolabs.com</a></p>
+        <p>HelmIQ is production with live paying customers. RehabAsCode runs on test data. GoHealthMe runs on testnet.</p>
+      </div>
     </div>
   </footer>
 
