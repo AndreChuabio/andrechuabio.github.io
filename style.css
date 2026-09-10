@@ -501,6 +501,45 @@ a { color: inherit; }
 }
 .note svg { width: 15px; height: 15px; color: var(--signal); flex: none; margin-top: 2px; }
 
+/* ---------- hackathons ---------- */
+.hack-stats { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 20px; }
+.hack-stat {
+  display: flex; align-items: baseline; gap: 9px;
+  border: 1px solid var(--line); border-radius: var(--radius);
+  background: var(--surface); padding: 11px 15px;
+}
+.hack-stat b { font-size: 19px; font-weight: 600; letter-spacing: -0.03em; }
+.hack-stat span { font-family: var(--mono); font-size: 11px; letter-spacing: 0.05em; color: var(--muted); text-transform: uppercase; }
+.hack-stat--win b { color: var(--signal); }
+
+.hackrecord {
+  border: 1px solid var(--line); border-radius: var(--radius);
+  background: var(--surface); overflow: hidden;
+}
+.hackrow {
+  display: grid; grid-template-columns: 168px 1fr; gap: 6px 26px;
+  padding: 20px clamp(18px, 2.6vw, 28px); align-items: start;
+  transition: background 0.2s ease;
+}
+.hackrow:hover { background: var(--surface-2); }
+.hackrow + .hackrow { border-top: 1px solid var(--line); }
+.hackrow__place {
+  display: inline-flex; align-items: center; gap: 8px; justify-self: start;
+  font-family: var(--mono); font-size: 12px; font-weight: 500; letter-spacing: 0.03em;
+  padding: 5px 11px; border: 1px solid var(--line); border-radius: var(--radius);
+  color: var(--muted); white-space: nowrap;
+}
+.hackrow__place .dot { width: 8px; height: 8px; }
+.hackrow__place--win { color: var(--signal); border-color: color-mix(in srgb, var(--signal) 40%, transparent); background: var(--signal-ghost); }
+.hackrow__place--top { color: var(--st-pilot); border-color: color-mix(in srgb, var(--st-pilot) 42%, transparent); }
+.hackrow__place--hm { color: var(--st-beta); border-color: color-mix(in srgb, var(--st-beta) 42%, transparent); }
+.hackrow__body { display: flex; flex-direction: column; gap: 7px; min-width: 0; }
+.hackrow__top { display: flex; align-items: baseline; gap: 11px; flex-wrap: wrap; }
+.hackrow__event { font-family: var(--mono); font-size: 12px; letter-spacing: 0.02em; color: var(--signal); }
+.hackrow__proj { font-weight: 600; font-size: 17px; letter-spacing: -0.02em; }
+.hackrow__desc { margin: 0; color: var(--muted); font-size: 14px; line-height: 1.6; }
+@media (max-width: 660px) { .hackrow { grid-template-columns: 1fr; gap: 11px; } }
+
 /* ---------- research ---------- */
 .rlist {
   list-style: none; margin: 0; padding: 0;
